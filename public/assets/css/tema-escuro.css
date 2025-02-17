@@ -1,0 +1,200 @@
+/* Variáveis do Tema Escuro */
+.bc-tema-escuro {
+    --bc-primary: #9F7AEA;
+    --bc-primary-hover: #B794F4;
+    --bc-text: #E2E8F0;
+    --bc-text-light: #A0AEC0;
+    --bc-border: #2D3748;
+    --bc-background: #1A202C;
+    --bc-white: #2D3748;
+    --bc-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.bc-tema-escuro .bc-home-header {
+    background: linear-gradient(135deg, #6B46C1 0%, #4A5568 100%);
+}
+
+/* Cards e Containers */
+.bc-tema-escuro .bc-categoria-card,
+.bc-tema-escuro .bc-artigo-card,
+.bc-tema-escuro .bc-sidebar,
+.bc-tema-escuro .bc-busca-input,
+.bc-tema-escuro .bc-resultados-busca {
+    background: var(--bc-white);
+    border-color: var(--bc-border);
+}
+
+/* Texto e Links */
+.bc-tema-escuro .bc-categoria-titulo a,
+.bc-tema-escuro .bc-artigo-titulo a,
+.bc-tema-escuro .bc-menu-link {
+    color: var(--bc-text);
+}
+
+.bc-tema-escuro .bc-categoria-descricao,
+.bc-tema-escuro .bc-artigo-meta,
+.bc-tema-escuro .bc-menu-item {
+    color: var(--bc-text-light);
+}
+
+/* Busca */
+.bc-tema-escuro .bc-busca-input {
+    color: var(--bc-text);
+}
+
+.bc-tema-escuro .bc-busca-input::placeholder {
+    color: var(--bc-text-light);
+}
+
+/* Menu Lateral */
+.bc-tema-escuro .bc-menu-link:hover,
+.bc-tema-escuro .bc-menu-link.active {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Artigos */
+.bc-tema-escuro .bc-artigo-item {
+    border-color: var(--bc-border);
+}
+
+.bc-tema-escuro .bc-artigo-link:hover {
+    color: var(--bc-primary);
+}
+
+/* Feedback */
+.bc-tema-escuro .bc-feedback-btn {
+    background: var(--bc-white);
+    color: var(--bc-text);
+}
+
+.bc-tema-escuro .bc-feedback-btn:hover {
+    background: var(--bc-primary);
+    color: #fff;
+}
+
+.bc-tema-escuro .bc-feedback-btn.active {
+    background: var(--bc-primary);
+    color: #fff;
+}
+
+/* Paginação */
+.bc-tema-escuro .bc-paginacao a {
+    background: var(--bc-white);
+    color: var(--bc-text);
+}
+
+.bc-tema-escuro .bc-paginacao a:hover {
+    background: var(--bc-primary);
+    color: #fff;
+}
+
+/* Loading e Mensagens */
+.bc-tema-escuro .bc-loading {
+    color: var(--bc-text);
+}
+
+.bc-tema-escuro .bc-sem-resultados {
+    color: var(--bc-text-light);
+}
+
+/* Breadcrumbs */
+.bc-tema-escuro .bc-breadcrumbs {
+    color: var(--bc-text-light);
+}
+
+.bc-tema-escuro .bc-breadcrumbs a {
+    color: var(--bc-text);
+}
+
+.bc-tema-escuro .bc-breadcrumbs a:hover {
+    color: var(--bc-primary);
+}
+
+/* Tabelas */
+.bc-tema-escuro table {
+    border-color: var(--bc-border);
+}
+
+.bc-tema-escuro th,
+.bc-tema-escuro td {
+    border-color: var(--bc-border);
+}
+
+.bc-tema-escuro thead th {
+    background: var(--bc-background);
+}
+
+/* Código */
+.bc-tema-escuro pre,
+.bc-tema-escuro code {
+    background: #2D3748;
+    color: #E2E8F0;
+}
+
+/* Highlights */
+.bc-tema-escuro mark {
+    background: var(--bc-primary);
+    color: #fff;
+}
+
+/* Scrollbar */
+.bc-tema-escuro ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.bc-tema-escuro ::-webkit-scrollbar-track {
+    background: var(--bc-background);
+}
+
+.bc-tema-escuro ::-webkit-scrollbar-thumb {
+    background: var(--bc-border);
+    border-radius: 4px;
+}
+
+.bc-tema-escuro ::-webkit-scrollbar-thumb:hover {
+    background: var(--bc-text-light);
+}
+
+/* Botão Toggle Tema */
+.bc-tema-toggle {
+    background: var(--bc-white);
+    border: 1px solid var(--bc-border);
+    color: var(--bc-text);
+}
+
+.bc-tema-toggle:hover {
+    background: var(--bc-primary);
+    color: #fff;
+}
+
+/* Modal */
+.bc-tema-escuro .bc-modal {
+    background: var(--bc-background);
+}
+
+.bc-tema-escuro .bc-modal-header {
+    border-color: var(--bc-border);
+}
+
+.bc-tema-escuro .bc-modal-titulo {
+    color: var(--bc-text);
+}
+
+/* Form Elements */
+.bc-tema-escuro input[type="text"],
+.bc-tema-escuro input[type="email"],
+.bc-tema-escuro textarea,
+.bc-tema-escuro select {
+    background: var(--bc-white);
+    border-color: var(--bc-border);
+    color: var(--bc-text);
+}
+
+.bc-tema-escuro input[type="text"]:focus,
+.bc-tema-escuro input[type="email"]:focus,
+.bc-tema-escuro textarea:focus,
+.bc-tema-escuro select:focus {
+    border-color: var(--bc-primary);
+}
