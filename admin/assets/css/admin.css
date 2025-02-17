@@ -1,0 +1,311 @@
+/* Reset e Variáveis */
+:root {
+    --bc-primary: #6B46C1;
+    --bc-secondary: #805AD5;
+    --bc-success: #48BB78;
+    --bc-danger: #E53E3E;
+    --bc-warning: #ECC94B;
+    --bc-info: #4299E1;
+    --bc-light: #F7FAFC;
+    --bc-dark: #1A202C;
+    --bc-border: #E2E8F0;
+    --bc-text: #2D3748;
+    --bc-text-light: #718096;
+    --bc-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    --bc-transition: all 0.3s ease;
+}
+
+/* Layout Geral */
+.bc-wrap {
+    margin: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: var(--bc-text);
+}
+
+/* Dashboard */
+.bc-dashboard {
+    display: grid;
+    gap: 24px;
+}
+
+/* Cards de Métricas */
+.bc-metricas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.bc-metrica-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--bc-shadow);
+    display: flex;
+    align-items: center;
+    transition: var(--bc-transition);
+}
+
+.bc-metrica-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bc-metrica-icone {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+.bc-metrica-info {
+    flex: 1;
+}
+
+.bc-metrica-titulo {
+    font-size: 14px;
+    color: var(--bc-text-light);
+    margin: 0 0 4px;
+}
+
+.bc-metrica-valor {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--bc-text);
+}
+
+/* Gráficos */
+.bc-graficos-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.bc-grafico-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: var(--bc-shadow);
+}
+
+.bc-grafico-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bc-grafico-titulo {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.bc-grafico-filtros {
+    display: flex;
+    gap: 12px;
+}
+
+.bc-grafico-container {
+    height: 300px;
+    position: relative;
+}
+
+/* Lista de Artigos Populares */
+.bc-artigos-populares {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: var(--bc-shadow);
+}
+
+.bc-artigo-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--bc-border);
+}
+
+.bc-artigo-item:last-child {
+    border-bottom: none;
+}
+
+.bc-artigo-titulo {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--bc-text);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.bc-artigo-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    color: var(--bc-text-light);
+}
+
+.bc-artigo-views, 
+.bc-artigo-tempo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.bc-artigo-barra {
+    height: 4px;
+    background: var(--bc-border);
+    border-radius: 2px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.bc-barra-progresso {
+    height: 100%;
+    background: var(--bc-primary);
+    border-radius: 2px;
+    transition: var(--bc-transition);
+}
+
+/* Editor de Documentos */
+.bc-editor-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+}
+
+.bc-editor-principal {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: var(--bc-shadow);
+}
+
+.bc-editor-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bc-editor-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--bc-shadow);
+}
+
+.bc-editor-box-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--bc-border);
+}
+
+/* Campos Personalizados */
+.bc-campo-grupo {
+    margin-bottom: 16px;
+}
+
+.bc-campo-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.bc-campo-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--bc-border);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.bc-campo-input:focus {
+    border-color: var(--bc-primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
+}
+
+/* Botões */
+.bc-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--bc-transition);
+    text-decoration: none;
+    border: none;
+}
+
+.bc-btn-primary {
+    background: var(--bc-primary);
+    color: #fff;
+}
+
+.bc-btn-primary:hover {
+    background: var(--bc-secondary);
+}
+
+.bc-btn-secondary {
+    background: #fff;
+    color: var(--bc-text);
+    border: 1px solid var(--bc-border);
+}
+
+.bc-btn-secondary:hover {
+    background: var(--bc-light);
+}
+
+/* Mensagens */
+.bc-mensagem {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bc-mensagem-sucesso {
+    background: #F0FFF4;
+    border: 1px solid #C6F6D5;
+    color: #2F855A;
+}
+
+.bc-mensagem-erro {
+    background: #FFF5F5;
+    border: 1px solid #FED7D7;
+    color: #C53030;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .bc-graficos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .bc-editor-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .bc-metricas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .bc-metricas-grid {
+        grid-template-columns: 1fr;
+    }
+}

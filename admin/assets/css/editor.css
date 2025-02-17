@@ -1,0 +1,271 @@
+/* Layout do Editor */
+.bc-editor-wrap {
+    max-width: 1600px;
+    margin: 20px;
+}
+
+/* Header do Editor */
+.bc-editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bc-editor-titulo {
+    flex: 1;
+    margin-right: 24px;
+}
+
+.bc-editor-titulo input {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px;
+    border: none;
+    background: transparent;
+}
+
+.bc-editor-titulo input:focus {
+    outline: none;
+}
+
+.bc-editor-acoes {
+    display: flex;
+    gap: 12px;
+}
+
+/* Container Principal */
+.bc-editor-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+}
+
+/* Editor Principal */
+.bc-editor-principal {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Barra de Ferramentas */
+.bc-editor-toolbar {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    border-bottom: 1px solid #E2E8F0;
+    background: #F8FAFC;
+}
+
+.bc-toolbar-grupo {
+    display: flex;
+    gap: 4px;
+    padding: 0 8px;
+    border-right: 1px solid #E2E8F0;
+}
+
+.bc-toolbar-grupo:last-child {
+    border-right: none;
+}
+
+.bc-toolbar-grupo button {
+    padding: 6px;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #4A5568;
+    transition: all 0.2s ease;
+}
+
+.bc-toolbar-grupo button:hover {
+    background: #EDF2F7;
+    color: #2D3748;
+}
+
+.bc-toolbar-grupo button.active {
+    background: #E2E8F0;
+    color: #2D3748;
+}
+
+/* Área de Edição */
+.bc-editor-conteudo {
+    padding: 24px;
+    min-height: 500px;
+}
+
+/* Sidebar */
+.bc-editor-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bc-editor-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.bc-box-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+/* Campos */
+.bc-campo-grupo {
+    margin-bottom: 16px;
+}
+
+.bc-campo-grupo:last-child {
+    margin-bottom: 0;
+}
+
+.bc-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.bc-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.bc-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Botões */
+.bc-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.bc-btn-preview {
+    background: #EDF2F7;
+    color: #2D3748;
+}
+
+.bc-btn-preview:hover {
+    background: #E2E8F0;
+}
+
+.bc-btn-rascunho {
+    background: #F7FAFC;
+    color: #4A5568;
+    border: 1px solid #E2E8F0;
+}
+
+.bc-btn-rascunho:hover {
+    background: #EDF2F7;
+}
+
+.bc-btn-primary {
+    background: #6B46C1;
+    color: #fff;
+}
+
+.bc-btn-primary:hover {
+    background: #805AD5;
+}
+
+/* Status */
+.bc-status {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.bc-salvando {
+    color: #4A5568;
+}
+
+.bc-salvo {
+    color: #48BB78;
+}
+
+.bc-erro {
+    color: #E53E3E;
+}
+
+.bc-nao-salvo {
+    color: #ED8936;
+}
+
+/* Estatísticas */
+.bc-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.bc-stat-item {
+    text-align: center;
+    padding: 12px;
+    background: #F7FAFC;
+    border-radius: 6px;
+}
+
+.bc-stat-label {
+    display: block;
+    font-size: 12px;
+    color: #4A5568;
+    margin-bottom: 4px;
+}
+
+.bc-stat-valor {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2D3748;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .bc-editor-container {
+        grid-template-columns: 1fr;
+    }
+
+    .bc-editor-sidebar {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .bc-editor-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .bc-editor-titulo {
+        margin-right: 0;
+    }
+
+    .bc-editor-toolbar {
+        flex-wrap: wrap;
+    }
+}

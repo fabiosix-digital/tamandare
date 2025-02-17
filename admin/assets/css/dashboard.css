@@ -1,0 +1,273 @@
+/* Dashboard Principal */
+.bc-dashboard-wrap {
+    margin: 20px;
+    max-width: 1600px;
+}
+
+/* Cards de Métricas */
+.bc-metricas-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.bc-metrica-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.bc-metrica-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bc-metrica-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.bc-metrica-icone {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+.bc-metrica-icone.artigos {
+    background: #EBF4FF;
+    color: #4299E1;
+}
+
+.bc-metrica-icone.visualizacoes {
+    background: #F0FFF4;
+    color: #48BB78;
+}
+
+.bc-metrica-icone.curtidas {
+    background: #FEF3C7;
+    color: #D97706;
+}
+
+.bc-metrica-icone.nao-curtidas {
+    background: #FEE2E2;
+    color: #DC2626;
+}
+
+.bc-metrica-info {
+    flex: 1;
+}
+
+.bc-metrica-titulo {
+    font-size: 14px;
+    color: #64748B;
+    margin: 0;
+}
+
+.bc-metrica-valor {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1E293B;
+    margin: 4px 0 0;
+}
+
+/* Gráfico de Performance */
+.bc-grafico-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.bc-grafico-principal {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bc-grafico-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.bc-grafico-titulo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E293B;
+    margin: 0;
+}
+
+.bc-grafico-filtros {
+    display: flex;
+    gap: 12px;
+}
+
+.bc-grafico-select {
+    padding: 6px 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #64748B;
+    background: #fff;
+}
+
+.bc-grafico-canvas {
+    height: 300px;
+    width: 100%;
+}
+
+/* Lista de Artigos Populares */
+.bc-artigos-populares {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bc-artigos-titulo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E293B;
+    margin: 0 0 24px;
+}
+
+.bc-artigo-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.bc-artigo-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.bc-artigo-link {
+    display: block;
+    color: #1E293B;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.bc-artigo-link:hover {
+    color: #6B46C1;
+}
+
+.bc-artigo-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: #64748B;
+}
+
+.bc-artigo-views, 
+.bc-artigo-tempo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.bc-artigo-barra {
+    height: 4px;
+    background: #E2E8F0;
+    border-radius: 2px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.bc-barra-progresso {
+    height: 100%;
+    background: #6B46C1;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+/* Atividades Recentes */
+.bc-atividades {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bc-atividades-titulo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E293B;
+    margin: 0 0 24px;
+}
+
+.bc-atividade-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.bc-atividade-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.bc-atividade-icone {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background: #F8FAFC;
+    color: #6B46C1;
+}
+
+.bc-atividade-info {
+    flex: 1;
+}
+
+.bc-atividade-texto {
+    font-size: 14px;
+    color: #1E293B;
+    margin: 0 0 4px;
+}
+
+.bc-atividade-tempo {
+    font-size: 13px;
+    color: #64748B;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .bc-grafico-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .bc-metricas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .bc-metricas-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .bc-dashboard-wrap {
+        margin: 10px;
+    }
+}
